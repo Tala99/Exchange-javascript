@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Exchange</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Exchange</h1>
+        <form id="exchangeForm">
+            <div>
+                <label for="amount">Amount:</label>
+                <input type="number" id="amount" name="amount" required>
+            </div>
+            <div>
+                <label for="fromCurrency">From:</label>
+                <select id="fromCurrency" name="fromCurrency" required>
+                    <option value="USD">USD</option>
+                    <option value="ILS">Shekel</option>
+                    <option value="JOD">JOD</option>
+                </select>
+            </div>
+            <div>
+                <label for="toCurrency">To:</label>
+                <select id="toCurrency" name="toCurrency" required>
+                    <option value="USD">USD</option>
+                    <option value="ILS">Shekel</option>
+                    <option value="JOD">JOD</option>
+                </select>
+            </div>
+            <button type="submit">Convert</button>
+        </form>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
